@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="logiin1.html">QUESTIONS GENERATOR</a></li>
+                <li><a href="addquestions.html">ADD QUESTIONS</a></li>
+                <li class="active"><a href="newregister.html">REGISTER</a></li>
+                <li><a href="#">NEED HELP</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav> 
+    
+    <div class="container">
+      <div class="jumbotron">
+        <h1>HERE YOU CAN REGISTER</h1>
+        <p>please provide required details</p>
+      </div>
+    </div> 
+    
+    <div class="container">
+        <form action="newregister.php" method="get">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+      </form>
+      
+          <div>
+                <a href="logiin1.html"><p>click here to login</p></a>
+          </div>
+
+    </div>
+  
+</body>
+
+
+</html>

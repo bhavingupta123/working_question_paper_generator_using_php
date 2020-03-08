@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+   <div class="container">
+   <div class="row">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="selectsubject.html">QUESTIONS GENERATOR</a></li>
+                <li><a href="addquestions.html">ADD QUESTIONS</a></li>
+                <li><a href="newregister.html">REGISTER</a></li>
+                <li><a href="#">NEED HELP</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Subscribe</a></li>
+            </ul>
+        </div>
+     </nav> 
+    </div>   
+  </div>
+   
+   <br><br><br><br><br>
+    
+    <div class="container p-5">
+     
+      <div class="dropdown col-xs-3 pt-4">
+       <form action="generate2.php">
+         
+         <p>select subject</p>
+          <select name="questions">
+            <option value="iwt">IWT</option>
+            <option value="java">JAVA</option>
+            <option value="ds">DS</option>
+          </select>
+          <br><br><br>
+          
+          <p>select module</p>
+          <select name="module1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <br><br><br>
+          
+          <p>select module</p>
+          <select name="module2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <br><br><br>
+          
+          <p>select complexity</p>
+          <select name="complexity">
+           
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+          </select>
+          <br><br><br>
+          <input type="submit" name="submit">
+      </form>
+      </div>
+    </div>   
+
+</body>
+
+
+
+</html>

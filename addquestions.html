@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="logiin1.html">QUESTIONS GENERATOR</a></li>
+                <li class="active"><a href="addquestions.html">ADD QUESTIONS</a></li>
+                <li><a href="newregister.html">REGISTER</a></li>
+                <li><a href="#">NEED HELP</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>  
+    
+    <br><br><br><br><br>
+      <div class="container">
+        <form action="addquestions.php" method="get">
+          
+           <div class="form-group">
+            <label for="exampleFormControlInput1">Enter subject</label>
+            <input type="text" class="form-control" name="subject" id="exampleFormControlInput1" placeholder="enter subject" required >
+          </div>
+           
+           <div class="form-group">
+            <label for="exampleFormControlInput1">Enter question</label>
+            <input type="text" class="form-control" name="question" id="exampleFormControlInput1" placeholder="enter question" required >
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">select marks</label>
+            <select class="form-control" name="marks" id="exampleFormControlSelect1" required >
+              <option>1</option>
+              <option>2</option>
+              <option>5</option>
+              <option>10</option>
+            </select>
+          </div>
+         <div class="form-group">
+            <label for="exampleFormControlSelect1">select module</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="module" required>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">select complexity</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="complexity" required>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          
+          <input type="submit" name='submit'>
+          </form>
+    </div>      
+</body>
+
+
+</html>
